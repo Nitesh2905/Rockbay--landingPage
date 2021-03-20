@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockBay</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Header Content -->
+    <header id="home">
+      <nav class="navbar">
+        <a href="#home"><h1>RockBay</h1></a>
+        <div class="nav-items">
+          <ul class="nav-list">
+            <li class="nav-link"><a href="#home">Home</a></li>
+            <li class="nav-link"><a href="#footer">Bookings</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main image and texts -->
+    <div class="container">
+      <div class="text-music" data-aos="zoom-in">
+        <div class="titlewords">RockBay - The Band</div>
+        <div class="description">
+          We are the sound of souls , a zestful group of people who are insanely
+          crazy and devoted towards only music.
+        </div>
+      </div>
+      <div class="main-image" data-aos="zoom-in">
+        <img src="singer-690117_1920.jpg" alt="RockBayimg" />
+      </div>
+    </div>
+
+    <!-- Music player -->
+    <div class="player" data-aos="flip-up">
+      <div class="contained-player">
+        <div class="music-player">
+          <div class="music-loader">
+            <span class="music-lines"></span>
+            <span class="music-lines"></span>
+            <span class="music-lines"></span>
+            <span class="music-lines"></span>
+            <span class="music-lines"></span>
+            <span class="music-lines"></span>
+          </div>
+        </div>
+        <div class="music-icon">
+          <i class="fas fa-forward icon" title="next"></i>
+          <i class="fas fa-play icon" title="play/pause"></i>
+          <i class="fas fa-backward icon" title="previous"></i>
+        </div>
+        <!-- Currently working on it  -->
+        <div class="disco-lights">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="address" data-aos="zoom-in">
+        <span class="address-visit"> Visit Us:</span> 300/69 Broadway, Suite 23
+        San Francisco, CA 94133
+        <div>
+          <span class="address-visit"
+            ><i class="fas fa-phone-square-alt"></i> 01245-48798</span
+          >
+        </div>
+      </div>
+      <div class="social-media">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>
+        Copyright © 2021 Made with <i class="fas fa-heart"></i> By
+        <a href="https://github.com/Nitesh2905">Nitex</a>
+      </p>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

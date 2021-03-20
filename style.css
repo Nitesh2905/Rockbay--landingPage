@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+  background-color: #10161b;
+  background-image: linear-gradient(62deg, #030405e8 0%, #160425 100%);
+}
+
+/* Header Part */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.navbar > a > h1 {
+  font-size: 2rem;
+  background: -webkit-linear-gradient(rgb(235, 220, 18), rgb(221, 141, 20));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-link {
+  display: flex;
+  margin-right: 8rem;
+}
+
+.nav-link > a {
+  padding: 10px;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+  color: #d8c83b;
+}
+
+.nav-link > a:hover {
+  background-color: rgba(255, 255, 255, 0.281);
+  border-radius: 5px;
+}
+
+/* Main Container */
+
+.container {
+  padding: 10px;
+  background: #1d232e75;
+  clip-path: polygon(0 0, 94% 0, 100% 76%, 63% 59%, 0 74%);
+}
+
+.text-music {
+  max-width: 500px;
+  margin: 10px;
+  color: #85ffbd;
+}
+
+.titlewords {
+  font: normal small-caps bold 2.8rem/150% "Fira Sans", sans-serif;
+  margin-top: 65px;
+}
+
+.description {
+  margin-top: 65px;
+  font: normal normal bold 1.5rem/150% "Fira Sans", sans-serif;
+}
+
+.main-image > img {
+  position: relative;
+  height: 500px;
+  left: 800px;
+  bottom: 280px;
+  border-radius: 200px 100px 50px 500px;
+  filter: drop-shadow(0 0 1.2rem #d4cb74);
+}
+
+/* Music-Player */
+.player {
+  max-width: 500px;
+}
+.contained-player {
+  position: absolute;
+  left: 150px;
+  transform: translateY(-120px);
+}
+
+.music-loader {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.music-lines {
+  display: block;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+
+  height: 100%;
+  width: 10px;
+  border-radius: 50px;
+  margin: 0 10px;
+  animation: waves 1.2s linear infinite;
+}
+
+@keyframes waves {
+  50% {
+    height: 20%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.music-lines:nth-child(1) {
+  animation-delay: 0s;
+}
+.music-lines:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.music-lines:nth-child(3) {
+  animation-delay: 06;
+}
+.music-lines:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.music-lines:nth-child(5) {
+  animation-delay: 0.3s;
+}
+.music-lines:nth-child(6) {
+  animation-delay: 0s;
+}
+
+.music-icon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  cursor: pointer;
+  color: #85ffbd;
+}
+
+.disco-lights {
+  display: flex;
+  position: absolute;
+  left: 550px;
+  bottom: 20px;
+}
+
+.circle {
+  height: 80px;
+  width: 80px;
+  margin-left: 100px;
+  border-radius: 999px;
+
+  animation: circle 2s cubic-bezier(0.82, -0.31, 0.15, 0.48) infinite;
+}
+
+@keyframes circle {
+  20% {
+    transform: scale3d(1.2, 1.22, 1.1);
+  }
+  50% {
+    transform: scale3d(0.82, 0.8, 0.5);
+  }
+  70% {
+    transform: scale3d(0.52, 0.5, 0.5);
+  }
+  100% {
+    transform: scale3d(1.1, 1, 0.5);
+  }
+}
+
+.circle:nth-child(1) {
+  background: #f7e000;
+  filter: drop-shadow(0 0 2rem #f7e000);
+}
+.circle:nth-child(2) {
+  background: #e76f28;
+  animation-delay: 0.5s;
+  filter: drop-shadow(0 0 2rem #e76f28);
+}
+.circle:nth-child(3) {
+  background: #0195cf;
+  animation-delay: 1s;
+  filter: drop-shadow(0 0 2rem #0195cf);
+}
+
+/* Footer */
+
+footer {
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.164);
+  align-items: center;
+  margin-top: 15rem;
+  color: #85ffbd;
+}
+footer .address {
+  max-width: 250px;
+  line-height: 40px;
+}
+
+footer .fab {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.address-visit {
+  font-weight: bold;
+}
+.copyright {
+  color: #85ffbd;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .navbar > a > h1 {
+    position: relative;
+    left: 40px;
+  }
+  .nav-list {
+    display: none;
+  }
+
+  .text-music {
+    z-index: 1;
+  }
+
+  .main-image > img {
+    height: 500px;
+    left: 5px;
+    border-radius: 0;
+    bottom: 393px;
+    opacity: 0.2;
+    z-index: -1;
+    filter: drop-shadow(0 0 1.5rem #eed91f);
+  }
+
+  .contained-player {
+    transform: translate(-60px, -150px);
+  }
+
+  .disco-lights {
+    left: -8px;
+    bottom: -100px;
+  }
+
+  .circle {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+  }
+  footer {
+    padding: 2px;
+    margin-bottom: 20px;
+  }
+}
